@@ -5,25 +5,19 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  scroll-behavior: smooth;
 }
 
 .hero {
   position: relative;
   height: 100vh;
   width: 100%;
-}
-.hero .hero-background div {
-  background-color: black;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-.hero .hero-background img {
-  width: 100%;
-  height: 100vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-  opacity: 0.6;
+  background-image: url("../assets/hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.8);
 }
 .hero h1 {
   position: absolute;
@@ -42,29 +36,75 @@
   border: none;
   padding: 1rem 2rem;
   font-weight: bold;
-  mix-blend-mode: screen;
   border-radius: 8px;
   transition: all 0.25s;
   cursor: pointer;
+}
+.hero button a {
+  text-decoration: none;
+  color: black;
 }
 .hero button:hover {
   scale: 1.1;
 }
 
-.location {
-  background-color: #111;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 2.5rem;
+.sejarah {
+  padding: 5rem;
+  background-color: rgb(247, 247, 247);
 }
-.location h1 {
-  text-align: center;
-  color: white;
+.sejarah header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 2.5rem;
 }
-.location .google-location {
-  height: 100%;
+.sejarah header img {
+  height: 25vh;
+}
+.sejarah header h1 {
+  font-size: 2.5rem;
+}
+.sejarah h3 {
+  text-align: center;
+}
+
+.pelayanan-umum-container {
+  padding: 5rem;
+  background-color: #333;
+  color: white;
+}
+.pelayanan-umum-container .pelayanan-umum-title {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.pelayanan-umum-container .pelayanan-umum {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+}
+.pelayanan-umum-container .pelayanan-umum .layanan {
   width: 100%;
+  padding: 1rem;
+}
+.pelayanan-umum-container .pelayanan-umum .layanan h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.pelayanan-umum-container .pelayanan-umum .layanan ul {
+  text-align: center;
+}
+.pelayanan-umum-container .pelayanan-umum .layanan ul li {
+  list-style: none;
+  padding-top: 1rem;
+  font-weight: bold;
+}
+.pelayanan-umum-container .pelayanan-umum .gray {
+  background-color: gray;
+  color: white;
+}
+.pelayanan-umum-container .pelayanan-umum .white {
+  background-color: white;
+  color: black;
 }/*# sourceMappingURL=general.css.map */
