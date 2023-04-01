@@ -107,4 +107,20 @@
 .pelayanan-umum-container .pelayanan-umum .white {
   background-color: white;
   color: black;
+}
+
+.struktur-organisasi img {
+  width: 100%;
+}
+
+footer {
+  padding: 2.5rem;
+  background-color: #333;
+}
+footer .google-map-location {
+  width: 100%;
+  height: 75vh;
+}
+footer p {
+  color: lightgray;
 }/*# sourceMappingURL=general.css.map */

@@ -2,6 +2,7 @@ import React from "react";
 import "./styles/general.css";
 import LogoTomohon from "./assets/logo tomohon.webp";
 import Galean from "./assets/galean.jpg";
+import StrukturOrganisasi from "./assets/Struktur Organisasi.png";
 
 function App() {
   return (
@@ -121,6 +122,19 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="struktur-organisasi">
+        <img src={StrukturOrganisasi} alt="struktur organisasi" />
+      </div>
+      <footer>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15954.822650751452!2d124.8322608!3d1.3531687!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32876d243eb214cf%3A0xaa9d80b99f963888!2sKantor%20Lurah%20Kakaskasen%20Satu!5e0!3m2!1sen!2sid!4v1680358359481!5m2!1sen!2sid"
+          allowfullscreen="true"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          className="google-map-location"
+        ></iframe>
+        <p>Copyright @ 2022, Putra Goni. All rights Reserved.</p>
+      </footer>
     </div>
   );
 }

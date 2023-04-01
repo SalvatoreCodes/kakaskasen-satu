@@ -122,3 +122,22 @@
     }
   }
 }
+
+.struktur-organisasi {
+  img {
+    width: 100%;
+  }
+}
+
+footer {
+  padding: 2.5rem;
+  background-color: #333;
+  .google-map-location {
+    width: 100%;
+    height: 75vh;
+  }
+
+  p {
+    color: lightgray;
+  }
+}
